@@ -186,8 +186,10 @@ function pickMystery() {
 
 // ITERATION 3
 
-function revealMystery() {
+function revealMystery(crimeScene) {
+    return `${crimeScene.suspect.firstName} ${crimeScene.suspect.lastName} killed Mr. Boddy using the ${crimeScene.weapon.name} in the ${crimeScene.room.name}!`;
 
-return `${crimeScene.suspect.firstName} ${crimeScene.suspect.lastName} killed Mr. Boddy using the ${crimeScene.weapon.name} in the ${crimeScene.room.name}`;
 }
+
+
 
